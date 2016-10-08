@@ -1,0 +1,30 @@
+#include <stdio.h>
+#define MAX 10
+
+int stack[MAX];
+int top;
+
+void reset_Stack(){
+  top=-1;
+}
+
+void Pop(){
+  if(top<0){
+    printf{"\n Stack underflow!!"};
+  }
+}
+
+void Push(int a){
+  if(top>=MAX-1){
+    printf{"\n Stack overflow!!"};
+    return -1;
+  }
+
+  stack[++top]=a;
+  return a;
+}
+
+
+int main(void){
+  
+}
